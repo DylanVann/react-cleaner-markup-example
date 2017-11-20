@@ -1,0 +1,1 @@
+export default (fn, ...funcs) => (...args) => funcs.reduce((acc, fn) => fn(acc), fn(...args))
